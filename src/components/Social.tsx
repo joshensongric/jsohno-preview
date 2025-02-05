@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Star, MessageSquare, Twitter, Laugh } from "lucide-react";
+import { Github, Star, MessageSquare, Twitter, Laugh, TrendingUp, Users, Award, Rocket } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 export const Social = () => {
@@ -13,6 +13,37 @@ export const Social = () => {
           Join the Movement
         </h2>
         
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-16">
+          <Card className="p-4 bg-primary/10 border-secondary/20">
+            <div className="text-center">
+              <Star className="w-8 h-8 text-secondary mx-auto mb-2" />
+              <div className="text-2xl font-bold text-white">14.2k</div>
+              <div className="text-sm text-gray-400">GitHub Stars</div>
+            </div>
+          </Card>
+          <Card className="p-4 bg-primary/10 border-secondary/20">
+            <div className="text-center">
+              <Users className="w-8 h-8 text-secondary mx-auto mb-2" />
+              <div className="text-2xl font-bold text-white">87k+</div>
+              <div className="text-sm text-gray-400">Active Users</div>
+            </div>
+          </Card>
+          <Card className="p-4 bg-primary/10 border-secondary/20">
+            <div className="text-center">
+              <Award className="w-8 h-8 text-secondary mx-auto mb-2" />
+              <div className="text-2xl font-bold text-white">YC W24</div>
+              <div className="text-sm text-gray-400">Y Combinator</div>
+            </div>
+          </Card>
+          <Card className="p-4 bg-primary/10 border-secondary/20">
+            <div className="text-center">
+              <Rocket className="w-8 h-8 text-secondary mx-auto mb-2" />
+              <div className="text-2xl font-bold text-white">#2</div>
+              <div className="text-sm text-gray-400">Product Hunt</div>
+            </div>
+          </Card>
+        </div>
+
         <div className="max-w-4xl mx-auto mb-16">
           <Card className="p-8 bg-primary/10 border-secondary/20">
             <div className="flex items-start space-x-4">
