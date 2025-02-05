@@ -1,12 +1,28 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Star, MessageSquare, Twitter, Laugh, TrendingUp, Users, Award, Rocket, FileText } from "lucide-react";
+import { Github, Star, MessageSquare, Twitter, Laugh, Users, Award, Rocket, FileText, Mail } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 
 export const Social = () => {
   const whitePaperUrl = "https://firebasestorage.googleapis.com/v0/b/flexpertsdev-pb6ym6.appspot.com/o/JSohNO_White_Paper_Final%20(1).pdf?alt=media&token=ef54889b-2b7c-4c7f-b82d-3499e8ff3d97";
   const rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  const [email, setEmail] = useState("");
+  const { toast } = useToast();
+
+  const handleWaitlistSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // In a real app, you'd want to send this to your backend
+    console.log("Waitlist signup:", email);
+    toast({
+      title: "You're on the list! 🎉",
+      description: "We'll notify you when JSohNOCOIN launches.",
+    });
+    setEmail("");
+  };
 
   return (
     <section className="py-20 bg-background/50" id="social">
@@ -21,6 +37,33 @@ export const Social = () => {
         <h2 className="text-4xl font-space font-bold text-white text-center mb-12">
           Join the Movement
         </h2>
+
+        <div className="max-w-xl mx-auto mb-16">
+          <Card className="p-8 bg-primary/10 border-secondary/20">
+            <div className="space-y-4">
+              <div className="flex items-center justify-center gap-2 text-secondary">
+                <Mail className="h-6 w-6" />
+                <h3 className="text-xl font-space font-bold">Join the JSohNOCOIN Waitlist</h3>
+              </div>
+              <p className="text-gray-400 text-center">
+                Be the first to know when JSohNOCOIN launches. Early supporters get special perks!
+              </p>
+              <form onSubmit={handleWaitlistSubmit} className="flex gap-2">
+                <Input
+                  type="email"
+                  placeholder="satoshi@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="bg-background/50"
+                />
+                <Button type="submit" variant="secondary">
+                  Join Waitlist
+                </Button>
+              </form>
+            </div>
+          </Card>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-16">
           <Card className="p-4 bg-primary/10 border-secondary/20">
