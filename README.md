@@ -1,3 +1,6 @@
+
+---
+
 🚀 JSohNO – The Ultimate AI-Optimized Encoding System
 
 "AI-safe, token-efficient, lossless string transmission... without all the legacy baggage."
@@ -15,9 +18,13 @@
 JSohNO is an ultralightweight, AI-optimized text encoding format that revolutionizes how large, unstructured text is processed for machine learning models.
 
 Inspired by DNA recombinant encoding, it:
+
 ✅ Reduces token usage by up to 87%
+
 ✅ Guarantees 100% API safety
+
 ✅ Achieves near-lossless content retention (even up to 3.14M charToks)
+
 
 > "JSohNO is to text what ZIP was to files, but with actual intelligence behind it."
 — A CTO who should probably be working instead of tweeting
@@ -121,4 +128,9 @@ Feeling brave? Take the experimental meTa-spin-040225-preview model for a ride h
 🚀 Join the Movement
 
 📌 Try JSohNO Today – Because escaping JSON shouldn't feel like writing C++ templates.
+
+
+---
+
+This version should render cleanly and consistently on GitHub. If you're still having issues, let me know!
 
