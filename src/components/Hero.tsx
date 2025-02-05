@@ -14,7 +14,7 @@ export const Hero = () => {
         </p>
         <Button 
           className="bg-secondary hover:bg-secondary/80 text-primary font-bold text-lg px-8 py-6"
-          onClick={() => window.open('/whitepaper.pdf', '_blank')}
+          onClick={() => window.open('https://firebasestorage.googleapis.com/v0/b/flexpertsdev-pb6ym6.appspot.com/o/JSohNO_White_Paper_Final%20(1).pdf?alt=media&token=ef54889b-2b7c-4c7f-b82d-3499e8ff3d97', '_blank')}
         >
           READ THE WHITE PAPER
         </Button>
