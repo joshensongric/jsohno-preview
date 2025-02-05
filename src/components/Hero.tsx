@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -13,9 +14,9 @@ export const Hero = () => {
         </p>
         <Button 
           className="bg-secondary hover:bg-secondary/80 text-primary font-bold text-lg px-8 py-6"
-          onClick={() => window.location.href = "#pricing"}
+          onClick={() => window.open('/whitepaper.pdf', '_blank')}
         >
-          GET STARTED – IT'S FREE (for now)
+          READ THE WHITE PAPER
         </Button>
       </div>
     </div>

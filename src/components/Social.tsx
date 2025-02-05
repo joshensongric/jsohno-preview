@@ -1,7 +1,8 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Star, MessageSquare, Twitter, Laugh, TrendingUp, Users, Award, Rocket } from "lucide-react";
+import { Github, Star, MessageSquare, Twitter, Laugh, TrendingUp, Users, Award, Rocket, FileText } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export const Social = () => {
   const rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
@@ -9,6 +10,13 @@ export const Social = () => {
   return (
     <section className="py-20 bg-background/50" id="social">
       <div className="container">
+        <div className="flex justify-center mb-6">
+          <Badge variant="secondary" className="px-4 py-2 text-base font-medium flex items-center gap-2">
+            <FileText className="w-4 h-4" />
+            White Paper Available Now!
+          </Badge>
+        </div>
+
         <h2 className="text-4xl font-space font-bold text-white text-center mb-12">
           Join the Movement
         </h2>
