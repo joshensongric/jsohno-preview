@@ -1,9 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Star, MessageSquare, Twitter } from "lucide-react";
+import { Github, Star, MessageSquare, Twitter, Laugh } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { laugh } from "@lucide/lab";
-import { Icon } from "lucide-react";
 
 export const Social = () => {
   const rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
@@ -23,7 +21,7 @@ export const Social = () => {
                   "I'll be honest - when I first read about JSohNO, I felt completely lost. Had to read it three times to understand what was going on... but once I figured it out (maybe not 100%), it turned out to be pretty amazing. It actually got me excited about diving deeper into AI prompt engineering!"
                 </p>
                 <div className="flex items-center space-x-2 text-secondary">
-                  <Icon iconNode={laugh} size={24} className="animate-bounce" />
+                  <Laugh size={24} className="animate-bounce" />
                   <span className="text-sm font-medium">@esam on Discord</span>
                 </div>
               </div>
