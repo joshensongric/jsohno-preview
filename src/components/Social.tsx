@@ -1,6 +1,9 @@
+
 import { Button } from "@/components/ui/button";
-import { Github, Star, Discord, Twitter } from "lucide-react";
+import { Github, Star, MessageSquare, Twitter } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { laugh } from "@lucide/lab";
+import { Icon } from "lucide-react";
 
 export const Social = () => {
   const rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
@@ -11,6 +14,23 @@ export const Social = () => {
         <h2 className="text-4xl font-space font-bold text-white text-center mb-12">
           Join the Movement
         </h2>
+        
+        <div className="max-w-4xl mx-auto mb-16">
+          <Card className="p-8 bg-primary/10 border-secondary/20">
+            <div className="flex items-start space-x-4">
+              <div className="flex-1 space-y-4">
+                <p className="text-xl text-gray-300 italic leading-relaxed">
+                  "I'll be honest - when I first read about JSohNO, I felt completely lost. Had to read it three times to understand what was going on... but once I figured it out (maybe not 100%), it turned out to be pretty amazing. It actually got me excited about diving deeper into AI prompt engineering!"
+                </p>
+                <div className="flex items-center space-x-2 text-secondary">
+                  <Icon iconNode={laugh} size={24} className="animate-bounce" />
+                  <span className="text-sm font-medium">@esam on Discord</span>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="p-6 bg-primary/20 border-secondary/20">
             <div className="space-y-4">
@@ -55,7 +75,7 @@ export const Social = () => {
                   className="w-full"
                   onClick={() => window.open(rickroll, '_blank')}
                 >
-                  <Discord className="mr-2" />
+                  <MessageSquare className="mr-2" />
                   Join Discord
                 </Button>
                 <Button 
